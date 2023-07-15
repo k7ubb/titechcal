@@ -1,0 +1,145 @@
+/*
+	全体の背景色 #dbe3e7
+	T2のラベル、課題のリボン #779bc8
+	T2の背景文字色 #b6c9e1
+	ocwのラベル、課題のリボン #8cc6dc
+	ocwの背景文字色 #b0d8e7
+	ボタンの縁、文字 #329cc3/#85c7df
+	削除ボタンの縁 #eff3f5/#ccdbe0
+*/
+
+body{
+	margin: 0;
+	background: #dbe3e7;
+}
+
+body>p.header{
+	background: #062853;
+	color: #fff;
+	height: 20px;
+}
+
+body>p.header a{
+	color: #8cc6dc;
+}
+
+body>p{
+	margin: 0;
+	font-size: 12px;
+	height: 30px;
+}
+
+p#kyomu_date::before{
+	content: "時間割";
+	display: inline-block;
+	background: #8cdcc6;
+	width: 70px;
+	padding: 8px 4px;
+	margin-right: 4px;
+	color: #fff;
+}
+
+p#ocw_date::before{
+	content: "OCW-i";
+	display: inline-block;
+	background: #8cc6dc;
+	width: 70px;
+	padding: 8px 4px;
+	margin-right: 4px;
+	color: #fff;
+}
+
+p#t2_date::before{
+	content: "T2SCHOLA";
+	display: inline-block;
+	background: #779bc8;
+	width: 70px;
+	padding: 8px 4px;
+	margin-right: 4px;
+	color: #fff;
+}
+
+p input[type="button"]{
+	margin: 2px 4px;
+	width: 100px;
+	background: #fff;
+	border: 1px solid #329cc3;
+	color: #329cc3;
+	border-radius: 30px;
+}
+
+p input[type="button"]:hover{
+	border: 1px solid #85c7df;
+	color: #85c7df;
+}
+
+p span#status{
+	display: inline-block;
+	width: 260px;
+	text-align: right;
+}
+
+table{
+	margin: 0;
+	padding: 0;
+	width: 500px;
+	table-layout: fixed;
+	border-collapse: collapse;
+	background: #fff;
+}
+
+th{
+	font-size: 12px;
+	width: 40px;
+	background: #dbe3e7;
+}
+
+td{
+	padding: 4px;
+	height: 74px;
+	max-width: 0;
+	vertical-align: top;
+}
+
+td.course{
+	background: #eee;
+}
+
+td.t2{
+	background: #779bc8;
+}
+
+td.ocw{
+	background: #8cc6dc;
+}
+
+td.t2.ocw{
+	background: #8cdcc6;
+}
+
+td p{
+	margin: 0;
+	font-size: 12px;
+	height: 18px;
+	overflow: hidden;
+	border-bottom: 1px solid;
+}
+
+td ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	height: 54px;
+	overflow: hidden;
+}
+
+td a{
+	display: inline-block;
+	background: #fff;
+	padding: 4px;
+	border-radius: 4px;
+	text-decoration: none;
+	font-size: 12px;
+	color: #666;
+	margin-top: 4px;
+}
