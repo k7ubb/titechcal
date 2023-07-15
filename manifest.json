@@ -1,14 +1,14 @@
 {
 	"manifest_version" : 2,
-	"name" : "Titech Zoom URL",
-	"version" : "1.0.2",
-	"description": "講義のzoomリンクを自動で取得します",
+	"name" : "T2SCHOLA時間割",
+	"version" : "2.0.6",
+	"description": "T2SCHOLAの講義ページへのリンクを時間割形式で表示します",
 	"permissions": [
 		"storage",
+		"declarativeNetRequest",
 		"https://portal.nap.gsic.titech.ac.jp/*",
 		"https://kyomu2.gakumu.titech.ac.jp/*",
-		"https://t2schola.titech.ac.jp/*",
-		"https://secure.ocw.titech.ac.jp/*"
+		"https://t2schola.titech.ac.jp/*"
 	],
 	"icons": {
 		"256": "icon.png"
@@ -17,6 +17,15 @@
 		"default_popup": "popup/index.htm"
 	},
 	"background": {
-		"scripts": ["function.js", "kyomu.js", "ocw.js", "t2schola.js"]
+		"scripts": ["background.js"]
+	},
+	"declarative_net_request" : {
+		"rule_resources": [
+			{
+				"id": "ruleset_1",
+				"enabled": true,
+				"path": "rule.json"
+			}
+		]
 	}
 }
