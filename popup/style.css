@@ -2,16 +2,7 @@ body{
 	margin: 0;
 }
 
-iframe{
-	border-style: none;
-	width: 500px;
-	height: 80px;
-	vertical-align: top;
-	overflow: hidden;
-}
-
 .wrap{
-	margin-top: -12px;
 	width: 500px;
 }
 
@@ -93,4 +84,15 @@ td span.t2{
 td a{
 	text-decoration: none;
 	color: #000;
+}
+
+
+.iframe{
+	border-style: none;
+	width: 500px;
+	height: 80px;
+	vertical-align: top;
+	overflow: hidden;
+	background: #779bc8;
+	font-size: 18px;
 }
